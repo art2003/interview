@@ -50,6 +50,7 @@
 ![alt text](ab4.png "Title")
 
 6.  Correct the following SQL query in order to improve its performance:
+
 select distinct p.PatientNo, ae.Med
 
 from Adverse\_Events ae

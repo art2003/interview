@@ -20,10 +20,9 @@
     visits. Leave the column blank for the first visit for each patient.
     The results should be as follows:
  
-   |  PatientNo | VisitNo  |VisitDate  |   DaysSincePrevious| 
-|---|---|---|---|---|
-|1 | 1 | 12-Jan-2005 |    |
- |  |   |             |    |
+ |PatientNo | VisitNo | VisitDate | DaysSincePrevious| 
+ |----------|---------|-----------|------------------|
+ |1         | 1       | 12-Jan-2005 |                |
  |1 | 2 | 23-Jan-2005 | 11 |
  |  |   |             |    |
  |1 | 3 | 28-Jan-2005 | 5  |
@@ -35,7 +34,8 @@
  |3 | 1 | 03-Feb-2005 |    |
  |  |   |             |    |
  |3 | 2 | 08-Feb-2005 | 5  |
-
+ 
+  
 
 5.  Join the tables to get:
 

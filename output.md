@@ -50,33 +50,30 @@
 ![alt text](ab4.png "Title")
 
 6.  Correct the following SQL query in order to improve its performance:
-<span style="color: blue"> 
-> select distinct p.PatientNo, ae.Med
->
-> from Adverse\_Events ae
->
-> right join Visits v on v.VisitId = ae.VisitId
->
-> inner join Patients p on p.PatientId = v.PatientId
->
-> where VisitDate = \'12-Jan-2005\'
->
-> or VisitDate = \'23-Jan-2005\'
->
-> or VisitDate = \'28-Jan-2005\'
->
-> union
->
-> select distinct p.PatientNo, ae.Med
->
-> from Patients p
->
-> left join Visits v on v.PatientId = p.PatientId
->
-> left join Medications m on m.VisitId = v.VisitId
->
-> where upper(left(p.Initials,2)) = \'AB\'
->
-> and m.VisitId in (select VisitId from Vital\_Signs where Sys \> 140)
+select distinct p.PatientNo, ae.Med
 
- </span>
+from Adverse\_Events ae
+
+right join Visits v on v.VisitId = ae.VisitId
+
+inner join Patients p on p.PatientId = v.PatientId
+
+where VisitDate = \'12-Jan-2005\'
+
+or VisitDate = \'23-Jan-2005\'
+
+or VisitDate = \'28-Jan-2005\'
+
+union
+
+select distinct p.PatientNo, ae.Med
+
+from Patients p
+
+left join Visits v on v.PatientId = p.PatientId
+
+left join Medications m on m.VisitId = v.VisitId
+
+where upper(left(p.Initials,2)) = \'AB\'
+
+and m.VisitId in (select VisitId from Vital\_Signs where Sys \> 140)

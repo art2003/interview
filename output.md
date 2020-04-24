@@ -14,7 +14,7 @@
 
     [PatientNo] [AE] [Med] [FromDate] [ToDate]
 
-3.  List all patients who had a headache more than once:
+3.  List the patient number and initials for every patient that never had a headache
 
 4.  Produce a report showing the number of days between successive
     visits. Leave the column blank for the first visit for each patient.
